@@ -1024,3 +1024,11 @@ var items = [{
   "has_variations": false,
   "used_manufacturer": false
 }];
+
+const between = items.filter(function(item) {
+  if (item.price > 14.00 && item.price < 18.00) {
+      return item.title
+  }
+})
+
+console.log(between)
